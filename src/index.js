@@ -1,12 +1,16 @@
+import { BrowserRouter as Router } from 'react-router-dom';
 import React from 'react';
 import ReactDOM from 'react-dom';
+import '@fontsource/roboto';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+//https://medium.com/swlh/using-react-router-on-github-pages-2702afdd5d0c
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Router basename={`/${ process.env.PUBLIC_URL }`}><App /></Router>
   </React.StrictMode>,
   document.getElementById('root')
 );

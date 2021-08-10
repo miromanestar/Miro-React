@@ -1,23 +1,18 @@
 import logo from './logo.svg';
+import config from './config.json'
 import './App.css';
+import Header from './components/Header';
+
+//Inspiration sites
+//https://www.serioverify.com/
+//https://waaark.com/
+//http://trydo.rainbowit.net/dark-main-demo
+//http://trydo.rainbowit.net/portfolio-home
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Header nav={config.nav} />
     </div>
   );
 }

@@ -1,0 +1,19 @@
+{
+    "meta": {
+        "title": "Miro Manestar",
+        "desc": "Welcome to my portfolio website!"
+    },
+    
+    "nav": {
+        "navItems": [
+            {
+                "title": "Home",
+                "path": "/"
+            },
+            {
+                "title": "Projects",
+                "path": "/projects"
+            }
+        ]
+    }
+}
