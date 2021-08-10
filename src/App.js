@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import config from './config.json'
+import Routes from './Routes.js';
 import './App.css';
 import Header from './components/Header';
 
@@ -12,7 +13,9 @@ import Header from './components/Header';
 function App() {
   return (
     <div className="App">
-        <Header nav={config.nav} />
+        <Header nav={ config.nav } />
+
+        <Routes nav={ config.nav } />
     </div>
   );
 }
